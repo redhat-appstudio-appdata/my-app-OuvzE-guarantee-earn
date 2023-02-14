@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-kw8h
+  namespace: nmukherj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2e6606f6f5b91da25651a597b4d5f66d7ae8fe3c0d70076f5727f6bd33bdbe8a
+        name: my-java-quarkus
+        resources: {}
+status: {}
